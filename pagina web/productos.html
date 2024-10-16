@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Prendas JG</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        main {
+            padding: 20px;
+        }
+        .back-button {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: none;
+            color: #fff;
+            background: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: #0056b3;
+        }
+        section {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background: #007bff;
+            color: #fff;
+        }
+        img {
+            max-width: 80px; /* Tamaño de imagen reducido */
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .price-container {
+            background-color: #e7f0ff; /* Fondo suave */
+            border-radius: 5px;
+            padding: 5px;
+            display: inline-block;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .price-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .price-link:hover {
+            color: #ffcc00;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prendas JG</h1>
+        <nav>
+            <ul>
+                <!-- Menú de navegación vacío -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-button">← Volver a Inicio</a>
+        <section>
+            <h2>Productos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Imagen</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Collar de Perlas</td>
+                        <td><img src="collar_perlas.jpg" alt="Collar de perlas"></td>
+                        <td><div class="price-container"><a class="price-link" href="formas_pago.html">$25.00</a></div></td>
+                    </tr>
+                    <tr>
+                        <td>Gorra de Algodón</td>
+                        <td><img src="gorra_algodon.jpg" alt="Gorra de algodón"></td>
+                        <td><div class="price-container"><a class="price-link" href="formas_pago.html">$15.00</a></div></td>
+                    </tr>
+                    <tr>
+                        <td>Anillo de Plata</td>
+                        <td><img src="anillo_plata.jpg" alt="Anillo de plata"></td>
+                        <td><div class="price-container"><a class="price-link" href="formas_pago.html">$30.00</a></div></td>
+                    </tr>
+                    <tr>
+                        <td>Pulsera de Cuero</td>
+                        <td><img src="pulsera_cuero.jpg" alt="Pulsera de cuero"></td>
+                        <td><div class="price-container"><a class="price-link" href="formas_pago.html">$20.00</a></div></td>
+                    </tr>
+                    <tr>
+                        <td>Bufanda de Lana</td>
+                        <td><img src="bufanda_lana.jpg" alt="Bufanda de lana"></td>
+                        <td><div class="price-container"><a class="price-link" href="formas_pago.html">$18.00</a></div></td>
+                    </tr>
+                    <tr>
+                        <td>Gorra de Beisbol</td>
+                        <td><img src="gorra_beisbol.jpg" alt="Gorra de béisbol"></td>
+                        <td><div class="price-container"><a class="price-link" href="formas_pago.html">$12.00</a></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Prendas JG. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+

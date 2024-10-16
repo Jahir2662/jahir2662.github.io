@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas de Pago - Prendas JG</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        .back-button {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            text-decoration: none;
+            color: #fff;
+            background: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: #0056b3;
+        }
+        section {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .payment-option {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            transition: transform 0.3s, background 0.3s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .payment-option:hover {
+            transform: scale(1.02);
+            background: #e9e9e9;
+        }
+        .payment-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+        .payment-info {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .payment-link {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .payment-link:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prendas JG</h1>
+    </header>
+
+    <main>
+        <a href="productos.html" class="back-button">← Volver a Productos</a>
+        <section>
+            <h2>Formas de Pago</h2>
+            <p>Aceptamos las siguientes formas de pago:</p>
+
+            <div class="payment-option">
+                <img class="payment-icon" src="tarjeta.png" alt="Tarjeta de crédito">
+                <div class="payment-info">
+                    <strong>Tarjeta de crédito</strong> 
+                    <a class="payment-link" href="pago_tarjeta.html">[Pagar]</a>
+                </div>
+            </div>
+
+            <div class="payment-option">
+                <img class="payment-icon" src="transferencia.png" alt="Transferencia bancaria">
+                <div class="payment-info">
+                    <strong>Transferencia bancaria</strong> 
+                    <a class="payment-link" href="pago_transferencia.html">[Pagar]</a>
+                </div>
+            </div>
+
+            <div class="payment-option">
+                <img class="payment-icon" src="paypal.png" alt="PayPal">
+                <div class="payment-info">
+                    <strong>PayPal</strong> 
+                    <a class="payment-link" href="pago_paypal.html">[Pagar]</a>
+                </div>
+            </div>
+
+            <div class="payment-option">
+                <img class="payment-icon" src="efectivo.png" alt="Efectivo">
+                <div class="payment-info">
+                    <strong>Efectivo (solo en tienda)</strong> 
+                    <a class="payment-link" onclick="alert('Pago en efectivo confirmado.');">[Pagar]</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Prendas JG. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
